@@ -1,0 +1,23 @@
+{% extends 'layout.html' %} 
+<!-- This means go get layout.html and build the page using it.
+     layout.html has several 'includes' in it that force it to go
+     and get the bits it needs to build itself, then come back here
+     with the mostly complete page -->
+
+{% block content %} 
+<!-- the % block content % part in layout.html is the last part of the page
+     to be built.  It will be replaced with the following... -->
+ 
+<img src="/static/images/Home Page.png" class="home-image" alt="Home Page Image" />
+<div class="home-text">
+<h2 >Welcome to Raidzone.</h2>
+<p >Raidzone is designed for the Destiny 2 Community to search up specific weapons statistics from activitys called raids</p>
+<p >(Disclaimer, only a select few weapons are chosen for the time being)</p>
+<p ><a href="/weapons">Weapons</a></p>
+</div>
+<!-- ...down to here. -->
+{% endblock %}
+
+
+<!-- and thats it - now the page is fully assembled and can be sent to
+     the browser -->

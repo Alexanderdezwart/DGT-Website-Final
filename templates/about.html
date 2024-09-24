@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div id="content">
+  <h2>About RaidZone</h2>
+  <p>This is a demo site to show  Flask, Jinja2, HTML and CSS features for my DGT internal.</p>
+
+  <form action="/about_feedback" method="post">
+    <h2 for="Feedback">Feedback:</h2>
+    <input type="text" id="Feedback" name="Feedback" placeholder="Please enter your feedback here:" size="100" required><br>
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+  
+{% endblock %}

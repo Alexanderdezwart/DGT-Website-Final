@@ -1,0 +1,28 @@
+<!-- This is the master document which has the
+     main layout, but also where any scripts, css
+     etc also get added -->
+
+<!doctype html>
+<html>
+  <head>
+   
+    <title>12DTP Flask Demo - {{ title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+
+  <body>
+      
+    <div id="wrapper">
+      <!--This is the header-->
+      <header>{% include 'header.html' %}</header>
+      <!--This is the navigation-->
+      <nav>{% include 'nav.html' %}</nav>
+      <!--This is where the information gets pulled -->
+      <main>{% block content %}{% endblock %}</main>
+      <!--This is the footer-->
+      <footer>{% include 'footer.html' %}</footer>
+    </div> 
+                             
+  </body>
+</html>

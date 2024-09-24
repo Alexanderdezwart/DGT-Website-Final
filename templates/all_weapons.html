@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="container">
+  {% for weapon in weapons %}
+      <div class="Images-and-Text">
+        <a href="/weapon/{{weapon[0]}}">
+          <img src="/static/images/{{ weapon[17] }}" alt="Weapon Image" width="150px">
+          <p>
+            {{ weapon[1]}}
+          </p>
+        </a>
+      </div>
+    <!--The term {{ weapon[x] }} pulls from the databas-->
+  {% endfor %}
+</div>
+{% endblock %}
